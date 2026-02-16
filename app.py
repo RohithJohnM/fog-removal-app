@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # --- Configuration ---
-MODEL_PATH = 'ffa_epoch_10.pth'
+MODEL_PATH = 'ffa_epoch_20.pth'
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # --- Load Model (Cached) ---
@@ -111,4 +111,5 @@ if uploaded_file is not None:
 else:
     # Placeholder when no image is uploaded
     with col1:
+
         st.info("Upload an image from the sidebar to begin.")
